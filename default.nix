@@ -11,5 +11,5 @@ in haskellPackages.developPackage {
   root = pkgs.nix-gitignore.gitignoreSource [ ] ./.;
   overrides = with pkgs.haskell.lib;
     pkgs.lib.composeExtensions
-    (self: _super: { th-desugar = self.th-desugar_1_14; }) extraOverrides;
+    (self: _super: { th-desugar = self.th-desugar_1_16; }) extraOverrides;
 }
